@@ -96,7 +96,3 @@ def delete_task(task_id):
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
-
-
-# Test Curls
-# $ curl -u stevie:wonder -i http://localhost:5000/todo/api/v1.0/tasks
