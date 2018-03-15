@@ -31,21 +31,21 @@ $ python app.py
 
 GET tasks
 ```
-$ curl -i http://127.0.0.1:5000/todo/api/v1.0/tasks
+$ curl -u "stevie:wonder" -i http://127.0.0.1:5000/todo/api/v1.0/tasks
 ```
 GET task id 1
 ```
-$ curl -i http://127.0.0.1:5000/todo/api/v1.0/tasks/1
+$ curl -u "stevie:wonder" -i http://127.0.0.1:5000/todo/api/v1.0/tasks/1
 ```
 CREATE task
 ```
-$ curl -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://127.0.0.1:5000/todo/api/v1.0/tasks
+$ curl -u "stevie:wonder" -i -H "Content-Type: application/json" -X POST -d '{"title":"Read a book"}' http://127.0.0.1:5000/todo/api/v1.0/tasks
 ```
 UPDATE task id 1
 ```
-$ curl -i -H "Content-Type: application/json" -X PUT -d '{"title":"Need to find a good Python tutorial"}' http://127.0.0.1:5000/todo/api/v1.0/tasks/1
+$ curl -u "stevie:wonder" -i -H "Content-Type: application/json" -X PUT -d '{"title":"Need to find a good Python tutorial"}' http://127.0.0.1:5000/todo/api/v1.0/tasks/1
 ```
 DELETE task id
 ```
-$ curl http://127.0.0.1:5000/todo/api/v1.0/tasks/1 -X DELETE
+$ curl -u "stevie:wonder" http://127.0.0.1:5000/todo/api/v1.0/tasks/1 -X DELETE
 ```
