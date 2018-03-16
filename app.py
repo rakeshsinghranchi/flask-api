@@ -20,6 +20,11 @@ tasks = [
     }
 ]
 
+@app.route('/')
+@app.route('/index')
+def index():
+    return "Hello, World from Rakesh updated!"
+
 @auth.get_password
 def get_password(username):
     if username == 'stevie':
